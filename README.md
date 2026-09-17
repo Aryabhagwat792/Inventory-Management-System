@@ -81,7 +81,22 @@ The objective of this project is to develop a functional inventory management sy
 
 Inventory Management System
 Academic Java Project
+#### OUTPUT(SCREENSHOTS)
 
+1.product management (add product)
 <img width="1600" height="854" alt="image" src="https://github.com/user-attachments/assets/d27ef1e4-b418-476c-8a5f-fb0da256ed07" />
+2.product management (view product)
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/9deccddf-35ce-4e4a-a4cc-f154ce9d8354" />
+3.product management(search product)
+<img width="1600" height="847" alt="image" src="https://github.com/user-attachments/assets/d543b296-e90d-4e68-bc98-dbe618c0ed84" />
+4.product management(update project)
+<img width="1600" height="847" alt="image" src="https://github.com/user-attachments/assets/bb72b191-1ea0-48c2-b94d-f330f3595435" />
+5.product management(delete product)
+<img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/3e195a6c-b519-47ed-831d-9edb61838d1a" />
+
+
+
+
+
 
 
