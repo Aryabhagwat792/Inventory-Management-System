@@ -1,67 +1,97 @@
-# Project Statement
+# Inventory Management System
 
-## Project Title
+## 1. Problem Statement
 
-Inventory Management System
+Managing inventory manually can become difficult when the number of products and suppliers increases. Keeping track of product details, stock quantities, suppliers, and stock movements using notebooks or separate records can lead to mistakes, outdated information, and difficulty in finding required records.
 
-## Problem Statement
+The Inventory Management System is developed to provide a simple and organized solution for managing basic inventory operations. The system allows users to maintain product and supplier records, update stock quantities, and keep track of stock transactions through a Java-based console application.
 
-Managing products, suppliers, and stock manually can make it difficult to keep inventory records organized and up to date. It can also lead to errors while adding products, updating quantities, or tracking stock movements.
+The project aims to reduce manual effort and provide a structured way to perform common inventory management operations.
 
-The **Inventory Management System** is developed to provide a simple and organized way to manage these inventory operations using a Java-based console application.
+## 2. Scope of the Project
 
-## Proposed Solution
+The scope of the project covers the basic operations required to manage an inventory system.
 
-The proposed system allows users to manage product and supplier information, maintain stock quantities, and record stock transactions through a menu-driven interface.
+The system includes:
 
-The application uses Java and Object-Oriented Programming concepts to divide the system into different modules and classes. Input validation and file handling are included to improve reliability and maintain stored information.
+- Adding, viewing, searching, updating, and deleting product records
+- Adding, viewing, updating, and deleting supplier records
+- Adding stock to existing products
+- Removing stock from products
+- Viewing current stock quantities
+- Recording stock-related transactions
+- Validating user input
+- Handling invalid operations
+- Storing and retrieving records using files
 
-## Main Modules
+The project focuses on basic inventory management through a console-based interface. It does not currently include advanced features such as online access, cloud storage, or database connectivity.
 
-1. **Product Management**
-   - Add products
-   - View products
-   - Search products
-   - Update products
-   - Delete products
+The system can be extended in the future by adding a database, graphical user interface, user authentication, automated reports, and low-stock notifications.
 
-2. **Supplier Management**
-   - Add suppliers
-   - View suppliers
-   - Update suppliers
-   - Delete suppliers
+## 3. Target Users
 
-3. **Stock Management**
-   - Add stock
-   - Remove stock
-   - View stock
-   - Update product quantities
+The system is intended for users who need to manage basic inventory information, including:
 
-4. **Transaction Management**
-   - Record stock additions
-   - Record stock removals
-   - Maintain transaction records
+- Small business owners
+- Shop owners
+- Store managers
+- Inventory staff
+- Small-scale retailers
+- Students and beginners learning inventory management systems
 
-## Objectives
+The application is particularly suitable for small-scale inventory operations where a simple and easy-to-use system is sufficient.
 
-- To develop a simple inventory management application using Java.
-- To manage product and supplier records efficiently.
-- To maintain accurate stock information.
-- To record stock-related transactions.
-- To implement CRUD operations.
-- To apply Object-Oriented Programming concepts.
-- To provide input validation and error handling.
-- To store inventory information using files.
+## 4. High-Level Features
 
-## Expected Outcome
+### Product Management
 
-The completed system will provide a functional console-based inventory management application that allows users to manage products, suppliers, stock, and transactions in an organized manner.
+Users can add, view, search, update, and delete product records. Product information can include details such as product ID, name, price, and quantity.
 
-## Technology Used
+### Supplier Management
 
-- Java
-- Object-Oriented Programming
-- File Handling
-- Exception Handling
-- Visual Studio Code
-- Git and GitHub
+Users can maintain supplier records by adding new suppliers, viewing their information, updating details, and deleting records when required.
+
+### Stock Management
+
+The system allows users to add and remove stock and check the current quantity of products.
+
+### Transaction Management
+
+Stock additions and removals can be recorded as transactions so that inventory movements can be maintained.
+
+### Input Validation
+
+The application validates user input and handles incorrect values such as invalid IDs, quantities, or menu choices.
+
+### File-Based Storage
+
+The system uses files to store inventory-related information so that records can be maintained between program executions.
+
+### Menu-Driven Interface
+
+The application provides a simple console menu that allows users to select and perform different inventory operations.
+
+## 5. System Workflow
+
+The general workflow of the system is:
+
+```text
+Start
+  ↓
+Display Main Menu
+  ↓
+Select Required Operation
+  ↓
+Enter Information
+  ↓
+Validate Input
+  ↓
+Perform Operation
+  ↓
+Update / Store Data
+  ↓
+Display Result
+  ↓
+Return to Main Menu
+  ↓
+Exit
