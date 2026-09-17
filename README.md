@@ -88,7 +88,8 @@ Academic Java Project
 2.product management (view product)
 <img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/9deccddf-35ce-4e4a-a4cc-f154ce9d8354" />
 3.product management(search product)
-<img width="1600" height="847" alt="image" src="https://github.com/user-attachments/assets/d543b296-e90d-4e68-bc98-dbe618c0ed84" />
+<img width="1600" height="843" alt="image" src="https://github.com/user-attachments/assets/25a5c9d2-b0ef-4990-8f19-4a9b4fbae091" />
+
 4.product management(update project)
 <img width="1600" height="847" alt="image" src="https://github.com/user-attachments/assets/bb72b191-1ea0-48c2-b94d-f330f3595435" />
 5.product management(delete product)
