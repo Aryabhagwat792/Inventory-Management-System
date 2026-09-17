@@ -103,6 +103,32 @@ Academic Java Project
 <img width="1600" height="857" alt="image" src="https://github.com/user-attachments/assets/edb13523-dc68-4515-be04-c6dcbc3c6afc" />
 9.supplier management(search supplier)
 <img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/3cd8886b-de12-4220-a3f6-14dd079d6513" />
+10.supplier management(update supplier)
+<img width="1600" height="847" alt="image" src="https://github.com/user-attachments/assets/519e4860-fcc5-462f-ba5b-dabc88569ba3" />
+11.supplier management(delete supplier)
+<img width="1600" height="852" alt="image" src="https://github.com/user-attachments/assets/d9a7fe5b-03a0-4e13-bdb2-aad3d5fa1f25" />
+12.back to main screen
+<img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/8f34d058-39c6-438b-83df-6f48925a00ec" />
+13.stock management(stock in)
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/fb6e28bc-adea-4580-ad92-a2cdca02ead2" />
+14.stock management(stock out)
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/8fb49d25-2b95-4b30-8432-10edccb46c5c" />
+15.stock management(check stock)
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/6e406c5c-8e29-4d2c-869c-253997a24eb1" />
+16.stock management( low stock product)
+<img width="1600" height="847" alt="image" src="https://github.com/user-attachments/assets/917323de-3ef3-4739-bbe7-0ac888a4faf8" />
+17.back to main screen
+<img width="1600" height="849" alt="image" src="https://github.com/user-attachments/assets/d0dc0be7-d646-440b-9797-2cac63b31ebf" />
+18.Transaction history
+<img width="1600" height="857" alt="image" src="https://github.com/user-attachments/assets/b0c0969f-e102-432b-ad7f-35cdd468e45d" />
+19.reports
+<img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/b30d8186-ce69-4ecf-be5a-1b1fbff29e9b" />
+20.project exit
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/07eae97c-0124-4eea-8303-21132935d463" />
+
+
+
+
 
 
 
