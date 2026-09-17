@@ -82,3 +82,6 @@ The objective of this project is to develop a functional inventory management sy
 Inventory Management System
 Academic Java Project
 
+<img width="1600" height="854" alt="image" src="https://github.com/user-attachments/assets/d27ef1e4-b418-476c-8a5f-fb0da256ed07" />
+
+
