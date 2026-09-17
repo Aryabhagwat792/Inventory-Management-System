@@ -1,86 +1,183 @@
 Inventory Management System
-1. Project Overview
+Project Overview
 
 The Inventory Management System is a Java-based console application developed to manage products, suppliers, stock, and inventory transactions.
 
-The application provides a simple menu-driven interface through which users can perform common inventory operations. It also includes input validation and file-based data storage for maintaining records.
+The system provides a simple menu-driven interface where users can perform different inventory operations. It uses Object-Oriented Programming concepts, input validation, and file handling to organize and maintain inventory data.
 
-2. Features
-Add, view, search, update, and delete products
-Add, view, update, and delete suppliers
-Add and remove product stock
-View current stock information
+Features
+Product Management
+Add new products
+View all products
+Search for products
+Update product details
+Delete products
+Supplier Management
+Add suppliers
+View supplier details
+Update supplier information
+Delete suppliers
+Stock Management
+Add stock
+Remove stock
+View available stock
+Update product quantities
+Transaction Management
+Record stock additions
+Record stock removals
 Maintain stock transaction records
-Validate user input
-Store data using files
-Simple menu-driven console interface
-3. Technologies and Tools Used
-Programming Language: Java
-Concepts: Object-Oriented Programming, CRUD Operations, Exception Handling, File Handling
+Other Features
+Input validation
+Error handling
+File-based data storage
+Menu-driven console interface
+Technologies and Tools Used
+Language: Java
+Programming Concepts: Object-Oriented Programming, CRUD Operations, Exception Handling, File Handling
 JDK: Java JDK 17 or later
 IDE: Visual Studio Code
 Version Control: Git and GitHub
 Storage: Local files
-4. Project Structure
-5. inventory
-├── model
-│   ├── Product.java
-│   ├── Supplier.java
-│   └── StockTransaction.java
+Project Structure
+Inventory Management System
 │
-├── service
-│   ├── ProductService.java
-│   ├── SupplierService.java
-│   └── StockService.java
-│
-└── util
-    ├── FileManager.java
-    ├── InputValidator.java
-    └── Main.java
-The project is divided into packages to keep the code organized and separate different responsibilities.
-
-5. Installation and Running the Project
+└── src
+    └── main
+        └── java
+            └── inventory
+                ├── model
+                │   ├── Product.java
+                │   ├── Supplier.java
+                │   └── StockTransaction.java
+                │
+                ├── service
+                │   ├── ProductService.java
+                │   ├── SupplierService.java
+                │   └── StockService.java
+                │
+                └── util
+                    ├── FileManager.java
+                    ├── InputValidator.java
+                    └── Main.java
 Requirements
 
-Make sure Java JDK 17 or later is installed.
+Before running the project, install:
 
-Check Java using:
+Java JDK 17 or later
+Visual Studio Code or any Java-compatible IDE
+Git (optional)
+
+Check Java installation:
 java -version
+Check the compiler:
+javac -version
 Installation
-Clone or download the GitHub repository.
+Clone or download this repository.
 Open the project folder in Visual Studio Code.
 Open the terminal.
-Make sure the Java source files are present in their respective packages.
-Compile the Project
+Navigate to the project directory.
+Make sure all source files are in their respective packages.
+How to Run
+
+Compile the project using:
 javac -d bin src/main/java/inventory/model/*.java src/main/java/inventory/service/*.java src/main/java/inventory/util/*.java
-Run the Project
+Run the application using:
 java -cp bin inventory.util.Main
-The main menu will appear in the terminal. Select the required option to use the application.
-6. Testing Instructions
+The main menu will appear in the terminal. Select the required option and follow the instructions displayed by the application.
 
-The application can be tested by performing the following operations:
+Testing
 
-Add a new product and verify that it appears in the product list.
-Search, update, and delete a product.
-Add and manage supplier information.
-Add stock to a product and check the updated quantity.
-Remove stock and verify the quantity again.
-Check stock transaction records.
-Enter invalid inputs and verify that the application handles them correctly.
-Restart the application and check whether stored data is available.
+The following operations can be performed to test the application:
 
-7. Expected Outcome
+Product Testing
+Add a product
+View products
+Search for a product
+Update product details
+Delete a product
+Supplier Testing
+Add a supplier
+View suppliers
+Update supplier details
+Delete a supplier
+Stock Testing
+Add stock to a product
+Remove stock
+Check the updated quantity
+Test invalid stock quantities
+Validation Testing
+Enter an invalid menu option
+Enter invalid numerical values
+Enter an invalid product ID
+Enter an invalid quantity
+Data Storage Testing
+Add or modify records
+Exit the application
+Run the application again
+Verify that the saved records are available
+Application Workflow
+Start
+  ↓
+Main Menu
+  ↓
+Select Operation
+  ↓
+Validate Input
+  ↓
+Perform Operation
+  ↓
+Update / Save Data
+  ↓
+Display Result
+  ↓
+Return to Main Menu
+Screenshots
 
-The system allows users to manage products and suppliers, track stock, maintain transaction records, and store inventory information through a simple Java console application.
+Screenshots of the working application are included to demonstrate the main functionality.
+Product Management
 
-8. Project Objective
+Add screenshot of product operations here.
 
-The objective of this project is to develop a functional inventory management system using Java while applying Object-Oriented Programming, CRUD operations, input validation, exception handling, and file handling.
+Supplier Management
 
-9. Author
+Add screenshot of supplier operations here.
+
+Stock Management
+
+Add screenshot showing stock operations here.
+
+Successful Product Addition
+
+Add screenshot showing the successful product addition message here.
+
+Objective
+
+The objective of this project is to develop a simple inventory management application using Java and demonstrate practical use of Object-Oriented Programming, CRUD operations, file handling, input validation, and exception handling.
+
+Expected Outcome
+
+The application allows users to manage products and suppliers, maintain stock quantities, record inventory transactions, and store inventory data through a simple console-based interface.
+
+Future Enhancements
+
+The system can be further improved by adding:
+
+Graphical User Interface
+Database connectivity
+User authentication
+Low-stock notifications
+Advanced inventory reports
+Product categories
+Improved search and filtering
+Author
 
 Inventory Management System
-Academic Java Project
+Java Academic Project
+
+License
+
+This project is developed for educational and academic purposes.
+
 #### OUTPUT(SCREENSHOTS)
 
 1.product management (add product)
