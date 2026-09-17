@@ -84,7 +84,8 @@ Academic Java Project
 #### OUTPUT(SCREENSHOTS)
 
 1.product management (add product)
-<img width="1600" height="854" alt="image" src="https://github.com/user-attachments/assets/d27ef1e4-b418-476c-8a5f-fb0da256ed07" />
+<img width="1600" height="854" alt="image" src="https://github.com/user-attac
+    hments/assets/d27ef1e4-b418-476c-8a5f-fb0da256ed07" />
 2.product management (view product)
 <img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/9deccddf-35ce-4e4a-a4cc-f154ce9d8354" />
 3.product management(search product)
@@ -94,6 +95,18 @@ Academic Java Project
 <img width="1600" height="847" alt="image" src="https://github.com/user-attachments/assets/bb72b191-1ea0-48c2-b94d-f330f3595435" />
 5.product management(delete product)
 <img width="1600" height="851" alt="image" src="https://github.com/user-attachments/assets/3e195a6c-b519-47ed-831d-9edb61838d1a" />
+6.back to main screen
+<img width="1600" height="844" alt="image" src="https://github.com/user-attachments/assets/57f08553-19a7-4f6d-91e1-b64201d234f3" />
+7.supplier management(add supplier)
+<img width="1600" height="852" alt="image" src="https://github.com/user-attachments/assets/8ab93890-bb31-42e5-839f-6da1b81a139f" />
+8.supplier management(view supplier)
+<img width="1600" height="857" alt="image" src="https://github.com/user-attachments/assets/edb13523-dc68-4515-be04-c6dcbc3c6afc" />
+9.supplier management(search supplier)
+<img width="1600" height="848" alt="image" src="https://github.com/user-attachments/assets/3cd8886b-de12-4220-a3f6-14dd079d6513" />
+
+
+
+
 
 
 
