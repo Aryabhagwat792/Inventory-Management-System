@@ -339,7 +339,7 @@ Programme: B.Tech CSE (AI & ML)
 Semester: 3rd Semester
 Institution: Vellore Institute of Technology
 
-👨‍💻 Author
+👨‍💻 Author:
 Arya Bhagwat
 
 📄 Related Files
