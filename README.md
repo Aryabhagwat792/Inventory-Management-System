@@ -1,4 +1,4 @@
-##Inventory Management System
+Inventory Management System
 -Project Overview
 
 The Inventory Management System is a Java-based console application developed to manage products, suppliers, stock, and inventory transactions.
@@ -70,6 +70,7 @@ Visual Studio Code or any Java-compatible IDE
 Git (optional)
 
 -Check Java installation:
+
 java -version
 Check the compiler:
 javac -version
@@ -80,7 +81,7 @@ Open the terminal.
 Navigate to the project directory.
 Make sure all source files are in their respective packages.
 
--How to Run
+-How to Run:
 
 Compile the project using:
 javac -d bin src/main/java/inventory/model/*.java src/main/java/inventory/service/*.java src/main/java/inventory/util/*.java
@@ -89,7 +90,6 @@ java -cp bin inventory.util.Main
 The main menu will appear in the terminal. Select the required option and follow the instructions displayed by the application.
 
 -Testing
-
 The following operations can be performed to test the application:
 
 Product Testing
@@ -118,7 +118,9 @@ Add or modify records
 Exit the application
 Run the application again
 Verify that the saved records are available
-Application Workflow
+
+-Application Workflow
+
 Start
   ↓
 Main Menu
@@ -134,35 +136,25 @@ Update / Save Data
 Display Result
   ↓
 Return to Main Menu
-Screenshots
 
--Screenshots of the working application are included to demonstrate the main functionality.
+-Screenshots
+Screenshots of the working application are included to demonstrate the main functionality.
 Product Management
-
-Add screenshot of product operations here.
-
+Added screenshot of product operations.
 Supplier Management
-
-Add screenshot of supplier operations here.
-
+Added screenshot of supplier operations.
 Stock Management
-
-Add screenshot showing stock operations here.
-
+Added screenshot showing stock operations.
 Successful Product Addition
-
-Add screenshot showing the successful product addition message here.
+Added screenshot showing the successful product addition message.
 
 -Objective
-
 The objective of this project is to develop a simple inventory management application using Java and demonstrate practical use of Object-Oriented Programming, CRUD operations, file handling, input validation, and exception handling.
 
 -Expected Outcome
-
 The application allows users to manage products and suppliers, maintain stock quantities, record inventory transactions, and store inventory data through a simple console-based interface.
 
 -Future Enhancements
-
 The system can be further improved by adding:
 
 -Graphical User Interface
