@@ -10,7 +10,7 @@ The project aims to reduce manual effort and provide a structured way to perform
 
 ## 2. Scope of the Project
 
-The scope of the project covers the basic operations required to manage an inventory system.
+The scope of the projects covers the basic operations required to manage an inventory system.
 
 The system includes:
 
@@ -26,11 +26,11 @@ The system includes:
 
 The project focuses on basic inventory management through a console-based interface. It does not currently include advanced features such as online access, cloud storage, or database connectivity.
 
-The system can be extended in the future by adding a database, graphical user interface, user authentication, automated reports, and low-stock notifications.
+The system can be extendeds in the future by adding a database, graphical user interface, user authentication, automated reports, and low-stock notifications.
 
 ## 3. Target Users
 
-The system is intended for users who need to manage basic inventory information, including:
+The system is intended for users who needs to manage basic inventory information, including:
 
 - Small business owners
 - Shop owners
