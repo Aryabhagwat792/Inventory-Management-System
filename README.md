@@ -1,177 +1,352 @@
-Inventory Management System
--Project Overview
+📦 Inventory Management System
+A Java-based console application for managing products, suppliers, stock, transactions, and inventory reports.
 
-The Inventory Management System is a Java-based console application developed to manage products, suppliers, stock, and inventory transactions.
+Build Your Own Project (BYOP) — VITyarthi
 
-The system provides a simple menu-driven interface where users can perform different inventory operations. It uses Object-Oriented Programming concepts, input validation, and file handling to organize and maintain inventory data.
+📌 About the Project
 
--Features
+The Inventory Management System is a menu-driven Java application developed to simplify basic inventory operations.
 
-Product Management
-Add new products
-View all products
-Search for products
-Update product details
-Delete products
-Supplier Management
-Add suppliers
-View supplier details
-Update supplier information
-Delete suppliers
-Stock Management
-Add stock
-Remove stock
-View available stock
-Update product quantities
-Transaction Management
-Record stock additions
-Record stock removals
-Maintain stock transaction records
-Other Features
-Input validation
-Error handling
-File-based data storage
-Menu-driven console interface
-Technologies and Tools Used
-Language: Java
-Programming Concepts: Object-Oriented Programming, CRUD Operations, Exception Handling, File Handling
-JDK: Java JDK 17 or later
-IDE: Visual Studio Code
-Version Control: Git and GitHub
-Storage: Local files
+The system allows users to manage product and suppliers, perform Stock IN and Stock OUT operations, maintain stock transaction history, identify low-stock products, and generate a basic inventory report.
 
--Project Structure
+The project is designed using a modular Java structure with separate Model, Service, and Utility components. Data is stored locally using Java object serialization in .dat files, so the records remain available after restarting the application.
+
+🎯 Objectives
+
+The main objectives of the project are to:
+
+Manage product records in an organized way.
+Maintain supplier information.
+Track available stock quantities.
+Record Stock IN and Stock OUT operations.
+Maintain transaction history.
+Identify products that require restocking.
+Generate basic inventory information.
+Apply Java Object-Oriented Programming concepts in a practical project.
+✨ Features
+🛒 Product Management
+
+The system provides complete product management operations:
+
+Add Product
+View Products
+Search Product
+Update Product
+Delete Product
+
+Each product contains information such as:
+
+Product ID · Name · Category · Price · Quantity · Reorder Level · Supplier ID
+
+🚚 Supplier Management
+
+Supplier records can be managed through:
+
+Add Supplier
+View Suppliers
+Search Supplier
+Update Supplier
+Delete Supplier
+
+Supplier information includes:
+
+Supplier ID · Name · Contact · Email
+
+📦 Stock Management
+
+The system provides basic stock control:
+
+Stock IN
+Stock OUT
+Check current stock
+Display low-stock products
+Validate available stock before Stock OUT
+
+The system prevents a Stock OUT operation when the requested quantitys is greater than the available quantity.
+
+🔄 Transaction Management
+
+Stock movements are recorded as transactions.
+
+Each transaction stores:
+
+Transaction ID
+Product ID
+Transaction Type
+Quantity
+Date and Time
+
+Users can also view the transaction history.
+
+⚠️ Low-Stock Detection
+The system checks the current quantity againsts the product's reorder level.
+If Quantity <= Reorder Level
+        ↓
+Product is identified as Low Stock
+This allows products requiring replenishment to be identified easily.
+📊 Inventory Report
+
+The application provides a basic inventory summary containing:
+
+Total number of products
+Total stock units
+Number of low-stock products
+Total inventory value
+
+The inventory value is calculated using:
+Inventory Value = Product Price × Product Quantity
+🧠 Technologies & Concepts
+| Technology / Concept   | Used For                              |
+| ---------------------- | ------------------------------------- |
+| **Java**               | Application development               |
+| **OOP**                | Classes, objects and encapsulation    |
+| **ArrayList**          | Managing collections of records       |
+| **File Handling**      | Reading and writing stored data       |
+| **Serialization**      | Persistent storage of Java objects    |
+| **Exception Handling** | Handling invalid operations and input |
+| **Packages**           | Organizing the application            |
+| **Console Interface**  | User interaction                      |
+🏗️ Project Architecture
+
+The project follows a simple modular architecture.
+                         USER
+                           │
+                           ▼
+                       Main.java
+                    (User Interface)
+                           │
+             ┌─────────────┼─────────────┐
+             ▼             ▼             ▼
+      ProductService  SupplierService  StockService
+             │             │             │
+             ▼             ▼             ▼
+          Product       Supplier    StockTransaction
+             │             │             │
+             └─────────────┼─────────────┘
+                           ▼
+                      FileManager
+                           │
+                           ▼
+                    .dat Data Files
+Model
+
+Contains the main data classes:
+
+Product
+Supplier
+StockTransaction
+Service
+
+Contains the main business operations:
+
+ProductService
+SupplierService
+StockService
+Utility
+
+Contains supporting classes:
+
+Main
+FileManager
+InputValidator
+📁 Project Structure
 Inventory Management System
 │
-└── src
-    └── main
-        └── java
-            └── inventory
-                ├── model
-                │   ├── Product.java
-                │   ├── Supplier.java
-                │   └── StockTransaction.java
-                │
-                ├── service
-                │   ├── ProductService.java
-                │   ├── SupplierService.java
-                │   └── StockService.java
-                │
-                └── util
-                    ├── FileManager.java
-                    ├── InputValidator.java
-                    └── Main.java
-                    
--Requirements
+├── inventory
+│   │
+│   ├── model
+│   │   ├── Product.java
+│   │   ├── Supplier.java
+│   │   └── StockTransaction.java
+│   │
+│   ├── service
+│   │   ├── ProductService.java
+│   │   ├── SupplierService.java
+│   │   └── StockService.java
+│   │
+│   └── util
+│       ├── FileManager.java
+│       ├── InputValidator.java
+│       └── Main.java
+│
+├── data
+│   ├── products.dat
+│   ├── suppliers.dat
+│   └── transactions.dat
+│
+├── README.md
+└── statement.md
+Number of Java Classes
+
+9 Java classes
+
+The project is divides into:
+
+3 Model classes
+3 Service classes
+3 Utility classes
+
+This separation keeps the code organized and makes individual responsibilities easier to manage.
+💾 Data Storage
+
+The project uses Java Serialization instead of a database.
+
+Three data files are used:
+products.dat
+suppliers.dat
+transactions.dat
+File	Purpose
+products.dat	Stores product records
+suppliers.dat	Stores supplier records
+transactions.dat	Stores stock transaction records
+
+The FileManager class handles saving and loading these objects.
+
+🔄 Application Workflow
+START
+  │
+  ▼
+Load Saved Data
+  │
+  ▼
+Display Main Menu
+  │
+  ▼
+Select Operation
+  │
+  ├── Product Management
+  │
+  ├── Supplier Management
+  │
+  ├── Stock Management
+  │
+  ├── Transaction History
+  │
+  └── Reports
+  │
+  ▼
+Validate Input
+  │
+  ▼
+Perform Operation
+  │
+  ▼
+Update Data
+  │
+  ▼
+Save Data
+  │
+  ▼
+Display Result
+  │
+  ▼
+Continue or Exit
+⚙️ Requirements
+
 Before running the project, install:
 
--Java JDK 17 or later
-Visual Studio Code or any Java-compatible IDE
-Git (optional)
+Java JDK
+Command Prompt / Terminal or a Java IDE
 
--Check Java installation:
+No external database or third-party library is required.
 
-java -version
-Check the compiler:
-javac -version
-Installation
-Clone or download this repository.
-Open the project folder in Visual Studio Code.
-Open the terminal.
-Navigate to the project directory.
-Make sure all source files are in their respective packages.
+▶️ How to Run
+1. Open the Project
 
--How to Run:
+Open the project folder containing the inventory and data directories.
 
-Compile the project using:
-javac -d bin src/main/java/inventory/model/*.java src/main/java/inventory/service/*.java src/main/java/inventory/util/*.java
-Run the application using:
+2. Compile
+
+Run:
+javac -d bin inventory/model/*.java inventory/service/*.java inventory/util/*.java
+
+3. Run
 java -cp bin inventory.util.Main
-The main menu will appear in the terminal. Select the required option and follow the instructions displayed by the application.
+The application will start with the main menu.
 
--Testing
-The following operations can be performed to test the application:
+🧪 Testing
 
-Product Testing
-Add a product
-View products
-Search for a product
-Update product details
-Delete a product
-Supplier Testing
-Add a supplier
-View suppliers
-Update supplier details
-Delete a supplier
-Stock Testing
-Add stock to a product
-Remove stock
-Check the updated quantity
-Test invalid stock quantities
-Validation Testing
-Enter an invalid menu option
-Enter invalid numerical values
-Enter an invalid product ID
-Enter an invalid quantity
-Data Storage Testing
-Add or modify records
-Exit the application
-Run the application again
-Verify that the saved records are available
+The major operations of the system were checked, including:
+| Operation     | Test Performed                         |
+| ------------- | -------------------------------------- |
+| Product       | Add, View, Search, Update, Delete      |
+| Supplier      | Add, View, Search, Update, Delete      |
+| Stock         | Stock IN and Stock OUT                 |
+| Validation    | Invalid input handling                 |
+| Stock Control | Prevent excessive Stock OUT            |
+| Low Stock     | Check products at/below reorder level  |
+| Transactions  | Record and display transaction history |
+| Reports       | Generate inventory summary             |
+| Persistence   | Save and reload `.dat` data            |
+🖥️ Screenshots
 
--Application Workflow
+Screenshots of the working application can be added here.
 
-Start
-  ↓
 Main Menu
-  ↓
-Select Operation
-  ↓
-Validate Input
-  ↓
-Perform Operation
-  ↓
-Update / Save Data
-  ↓
-Display Result
-  ↓
-Return to Main Menu
 
--Screenshots
-Screenshots of the working application are included to demonstrate the main functionality.
 Product Management
-Added screenshot of product operations.
+
 Supplier Management
-Added screenshot of supplier operations.
+
 Stock Management
-Added screenshot showing stock operations.
-Successful Product Addition
-Added screenshot showing the successful product addition message.
 
--Objective
-The objective of this project is to develop a simple inventory management application using Java and demonstrate practical use of Object-Oriented Programming, CRUD operations, file handling, input validation, and exception handling.
+Product Added Successfully
 
--Expected Outcome
-The application allows users to manage products and suppliers, maintain stock quantities, record inventory transactions, and store inventory data through a simple console-based interface.
+Note: Keep only the screenshot links for images that you have actually uploaded to the screenshots folder.
 
--Future Enhancements
-The system can be further improved by adding:
+📚 Learning Outcomes
 
--Graphical User Interface
-Database connectivity
-User authentication
-Low-stock notifications
-Advanced inventory reports
-Product categories
-Improved search and filtering
-Author
+Through this project, the following concepts were applied:
 
--Inventory Management System
-Java Academic Project
+Java Classes and Objects
+Encapsulation
+ArrayList
+Packages
+CRUD Operations
+File Handling
+Object Serialization
+Exception Handling
+Input Validation
+Modular Programming
+Service-based Design
+Data Persistence
+Testing and Debugging
+🚀 Future Enhancements
 
--License
-This project is developed for educational and academic purposes.
+The system can be further extended with:
 
+🗄️ Database integration
+🖥️ Graphical User Interface
+🔐 User authentication
+👥 Role-based access
+📈 Advanced inventory reports
+📄 CSV/PDF report export
+🔔 Automated low-stock notifications
+🔎 Advanced product filtering and search
+📌 Limitations
+
+The current version:
+
+Uses a console-based interface.
+Uses local .dat files instead of a relational database.
+Does not include user authentication.
+Provides basic rather than advanced reporting.
+🎓 Academic Information
+
+Project: Build Your Own Project (BYOP)
+Project Title: Inventory Management System
+Programme: B.Tech CSE (AI & ML)
+Semester: 3rd Semester
+Institution: Vellore Institute of Technology
+
+👨‍💻 Author
+Arya Bhagwat
+
+📄 Related Files
+statement.md — Problem statement, scope, target users and high-level features.
+
+
+If Quantity <= Reorder Level
 #### OUTPUT(SCREENSHOTS)
 
 1.product management (add product)
