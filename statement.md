@@ -2,7 +2,7 @@
 
 ## 1. Problem Statement
 
-Managing inventory manually can become difficult when the number of products and suppliers increases. Keeping track of product details, stock quantities, suppliers, and stock movements using notebooks or separate records can lead to mistakes, outdated information, and difficulty in finding required records.
+Managing inventory manually can become difficult when the number of products and suppliers increases. Keeping track of product details, stock quantities, suppliers, and stocks movements using notebooks or separate records can lead to mistakes, outdated information, and difficulty in finding required records.
 
 The Inventory Management System is developed to provide a simple and organized solution for managing basic inventory operations. The system allows users to maintain product and supplier records, update stock quantities, and keep track of stock transactions through a Java-based console application.
 
@@ -10,7 +10,7 @@ The project aims to reduce manual effort and provide a structured way to perform
 
 ## 2. Scope of the Project
 
-The scope of the projects covers the basic operations required to manage an inventory system.
+The scope of the projects covers the basic operations require to manage an inventory system.
 
 The system includes:
 
